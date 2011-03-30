@@ -5,6 +5,8 @@ namespace html5Templates.Web.Models
 {
     public class KitchenSink
     {
+        /* Note: [DataType("TemplateName")] and Mvc's [UIHint("TemplateName")] are equivalent for our purposes */
+
         public string RegularString { get; set; }
 
         [DataType(DataType.EmailAddress)]
@@ -17,7 +19,6 @@ namespace html5Templates.Web.Models
         public string Phone { get; set; }
 
         [DataType("Search")]
-        //[UIHint("Search")]  //UI hint and a custom datatype do the same thing
         public string Search { get; set; }
 
         //[DataType(DataType.DateTime)] //Redundant
@@ -37,5 +38,11 @@ namespace html5Templates.Web.Models
 
         [DataType("Week")]
         public string Week { get; set; }
+
+        [DataType("Number")] //On Opera number uses a spinbox, so this will only work with integers
+        public int Number { get; set; }
+
+        [DataType("Color")]
+        public string Color { get; set; }
     }
 }
