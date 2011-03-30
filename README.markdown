@@ -18,6 +18,12 @@ By default in ASP.NET MVC, calling Html.EditorFor() on any of these properties w
 
 This project intends to have Html.EditorFor() call the proper Html5 input types, such as Html.EditorFor(p=>p.Email) resulting in `<input type='Email' ... />`.
 
+So the relevant part of calling `Html.EditorFor(Model)` would give:
+
+	<input type="text" id="Name" name="Name" />
+	<input type="email" id="Email" name="Email" />
+	<input type="url" id="Url" name="Url" />
+
 The great thing about the new Html5 input types is that old browsers have no problem displaying them (they just default to type='text').  Modern browsers, however, can use them to create a better user experience.  This better experience may come from validation or styling (for example, Opera puts a small email icon inside the field), and many mobile devices (like the iPhone) will recognize these new types and display a customized keyboard.
 
 There really isn't any downside to converting your basic `<input type='text' .../>` tags to new html5 input types for known data types, as the users that have modern browsers will enjoy the benefits without damaging the experience for legacy browsers.
