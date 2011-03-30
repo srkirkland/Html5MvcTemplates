@@ -6,7 +6,7 @@
 
 <h2>KitchenSink</h2>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm("KitchenSink", "Demo", FormMethod.Get)) {
     @Html.ValidationSummary(true)
     <fieldset>
         <legend>All Input Types</legend>
