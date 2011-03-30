@@ -34,5 +34,8 @@ namespace html5Templates.Web.Models
 
         [DataType("Month")]
         public string Month { get; set; }
+
+        [DataType("Week")]
+        public string Week { get; set; }
     }
 }
