@@ -1,0 +1,25 @@
+﻿@model html5Templates.Web.Models.KitchenSink
+
+@{
+    ViewBag.Title = "KitchenSink";
+}
+
+<h2>KitchenSink</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>All Input Types</legend>
+
+        @Html.EditorForModel()
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
