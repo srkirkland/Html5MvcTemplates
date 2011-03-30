@@ -11,5 +11,11 @@ namespace html5Templates.Web.Models
 
         [DataType(DataType.Url)]
         public string Url { get; set; }
+
+        [DataType(DataType.PhoneNumber)]
+        public string Phone { get; set; }
+
+        [DataType("Search")]
+        public string Search { get; set; }
     }
 }
