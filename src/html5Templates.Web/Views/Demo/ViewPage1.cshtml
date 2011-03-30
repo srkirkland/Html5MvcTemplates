@@ -1,15 +1,15 @@
 ﻿@model html5Templates.Web.Models.KitchenSink
 
 @{
-    ViewBag.Title = "KitchenSink";
+    ViewBag.Title = "ViewPage1";
 }
 
-<h2>KitchenSink</h2>
+<h2>ViewPage1</h2>
 
-@using (Html.BeginForm("KitchenSink", "Demo", FormMethod.Get)) {
+@using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
     <fieldset>
-        <legend>All Input Types</legend>
+        <legend>KitchenSink</legend>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.RegularString)
@@ -121,28 +121,7 @@
     </fieldset>
 }
 
-<div id="source">
-<pre class="prettyprint">
-public class Something {
-    //Code comment
-}
-</pre>
-</div>
-
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
 
-<script type="text/javascript">
-    $(function () {
-        var html = htmlEncode($('form').html());
-        $('#source > pre.prettyprint').html(html);
-
-        prettyPrint();
-    });
-
-    function htmlEncode(value) {
-        return $('<div/>').text(value).html();
-    }
-
-</script>
