@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace html5Templates.Web.Models
 {
@@ -16,6 +17,22 @@ namespace html5Templates.Web.Models
         public string Phone { get; set; }
 
         [DataType("Search")]
+        //[UIHint("Search")]  //UI hint and a custom datatype do the same thing
         public string Search { get; set; }
+
+        //[DataType(DataType.DateTime)] //Redundant
+        public DateTime DateTime { get; set; }
+        
+        [DataType("DateTime-Local")]
+        public DateTime DateTimeLocal { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime DateOnly { get; set; }
+
+        [DataType(DataType.Time)]
+        public string TimeOnly { get; set; }
+
+        [DataType("Month")]
+        public string Month { get; set; }
     }
 }
