@@ -1,6 +1,6 @@
-Html5 Object Templates for ASP.NET MVC 2 and 3.
+## Html5 Object Templates for ASP.NET MVC 3.
 
-Will add the new html5 input types, such as email, tel, and url, to the MVC EditorTemplates.
+This project adds the new html5 input types, such as email, tel, and url, to the MVC EditorTemplates.
 
 For example, assume you have a person class:
 
@@ -16,7 +16,7 @@ For example, assume you have a person class:
 
 By default in ASP.NET MVC, calling Html.EditorFor() on any of these properties will create a simple `<input type='text' ... />` tag.
 
-This project intends to have Html.EditorFor() call the proper Html5 input types, such as Html.EditorFor(p=>p.Email) resulting in `<input type='Email' ... />`.
+This project creates simple EditorTemplates which allow an Html.EditorFor() call to create the proper Html5 input types, such as Html.EditorFor(p=>p.Email) resulting in `<input type='Email' ... />`.
 
 So the relevant part of calling `Html.EditorFor(Model)` would give:
 
@@ -28,7 +28,27 @@ The great thing about the new Html5 input types is that old browsers have no pro
 
 There really isn't any downside to converting your basic `<input type='text' .../>` tags to new html5 input types for known data types, as the users that have modern browsers will enjoy the benefits without damaging the experience for legacy browsers.
 
-Links:
-For a list of html input types, see: http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#attr-input-type
+Status:
 
-For a good reference on html5 form changes, see: http://diveintohtml5.org/forms.html
+This project currently adds Mvc Editor Templates for the following new HTML5 input types:
+
+* search
+* tel
+* url
+* email
+* datetime
+* date
+* month
+* week
+* time
+* datetime-local
+* number
+* range
+* color
+
+The only input type not supported is range, and that is because having a range input doesn't make any sense without being able to specify a min/max for that range.
+
+Links:
+For a list of html input types, see: [[http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#attr-input-type]]
+
+For a good reference on html5 form changes, see: [[http://diveintohtml5.org/forms.html]]
