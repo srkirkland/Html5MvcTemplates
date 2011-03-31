@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <id>MvcHtml5InputTemplates</id>
-    <title>Mvc Html5 Input Templates</title>
+    <id>MvcHtml5Templates</id>
+    <title>Mvc Html5 Templates</title>
     <version>0.5.0.0</version>
     <authors>Scott Kirkland</authors>
     <owners>Scott Kirkland</owners>    
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/srkirkland/Html5MvcTemplates</projectUrl>
     <iconUrl>https://github.com/srkirkland/Html5MvcTemplates/raw/master/src/html5Templates.Web/Images/Html5.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>This project adds the new html5 input types, such as email, tel, and url, to the MVC EditorTemplates. For example, Html.EditorFor(a=>a.Email) can now make an html5 input type='email'.</description>
+    <description>Adds EditorTemplates for the new html5 input types (including email, tel, and url) to Mvc 3 projects. For example, Html.EditorFor(a=>a.Email) can now generate an html5 input type='email'.</description>
     <tags>Html5 MVC3 ASP.NET MVC</tags>
   </metadata>
   <files xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
