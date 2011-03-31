@@ -51,6 +51,6 @@ This project currently adds Mvc Editor Templates for the following new HTML5 inp
 The only input type not supported is range, and that is because having a range input doesn't make any sense without being able to specify a min/max for that range.
 
 ### Links:
-For a list of html input types, see: [[http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#attr-input-type]]
+For a list of html input types, see: [http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#attr-input-type](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#attr-input-type)
 
-For a good reference on html5 form changes, see: [[http://diveintohtml5.org/forms.html]]
+For a good reference on html5 form changes, see: [http://diveintohtml5.org/forms.html](http://diveintohtml5.org/forms.html)
