@@ -94,6 +94,10 @@
     <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="humans.txt" />
+    <Content Include="Images\Chrome-10-Html5.png" />
+    <Content Include="Images\FireFox-4-Html5.png" />
+    <Content Include="Images\Opera-10-Html5.png" />
+    <Content Include="Images\Safari-5-Html5.png" />
     <Content Include="index.html" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\libs\dd_belatedpng.js" />
@@ -134,9 +138,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
