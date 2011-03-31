@@ -2,6 +2,8 @@
 
 For setup instructions, see the [Setup And Getting Started](https://github.com/srkirkland/Html5MvcTemplates/wiki/Setup-And-Getting-Started) page.
 
+Html5 Object Templates for ASP.NET MVC 3.
+
 This project adds the new html5 input types, such as email, tel, and url, to the MVC EditorTemplates.
 
 For example, assume you have a person class:
@@ -16,9 +18,9 @@ For example, assume you have a person class:
 	    public string Url {get;set;}
 	}
 
-By default in ASP.NET MVC, calling Html.EditorFor() on any of these properties will create a simple `<input type='text' ... />` tag.
+By default in ASP.NET MVC, calling `Html.EditorFor()` on any of these properties will create a simple `<input type='text' ... />` tag.
 
-This project creates simple EditorTemplates which allow an Html.EditorFor() call to create the proper Html5 input types, such as Html.EditorFor(p=>p.Email) resulting in `<input type='Email' ... />`.
+This project creates simple EditorTemplates which allow an `Html.EditorFor()` call to create the proper Html5 input types, such as `Html.EditorFor(p=>p.Email)` resulting in `<input type='email' ... />`.
 
 So the relevant part of calling `Html.EditorFor(Model)` would give:
 
@@ -50,7 +52,7 @@ This project currently adds Mvc Editor Templates for the following new HTML5 inp
 
 The only input type not supported is range, and that is because having a range input doesn't make any sense without being able to specify a min/max for that range.
 
-Links:
+### Links:
 For a list of html input types, see: [[http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#attr-input-type]]
 
 For a good reference on html5 form changes, see: [[http://diveintohtml5.org/forms.html]]
