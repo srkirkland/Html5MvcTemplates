@@ -1,6 +1,8 @@
 ## Html5 Object Templates for ASP.NET MVC 3.
 
-For setup instructions, see the [Setup And Getting Started](https://github.com/srkirkland/Html5MvcTemplates/wiki/Setup-And-Getting-Started) page.
+Now available as a NuGet package, [MvcHtml5Templates](http://nuget.org/List/Packages/MvcHtml5Templates)!
+
+For complete setup instructions, see the [Setup And Getting Started](https://github.com/srkirkland/Html5MvcTemplates/wiki/Setup-And-Getting-Started) page.
 
 This project adds the new html5 input types, such as email, tel, and url, to the MVC EditorTemplates.
 
